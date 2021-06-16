@@ -1,6 +1,6 @@
 # Redis Cluster
 
-You can find the complete article,
+You can find complete article,
 
 - <a href="http://www.sparkyflash.com/blog/redis-cluster" target="_blank">@SparkyFlash/blog/redis-cluster</a>
 - <a href="http://www.sparkyflash.com/blog/redis-cluster-configuration" target="_blank">@SparkyFlash/blog/redis-cluster-configuration</a>
