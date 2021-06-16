@@ -1,0 +1,15 @@
+[Unit]
+Description=Redis persistent key-value database
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/redis-server /etc/redis/redis.master3.conf
+PIDFile=/var/run/redis/redis-master-server3.pid
+ReadWriteDirectories=-/var/lib/master3
+Alias=redis.master3.service
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,15 @@
+[Unit]
+Description=Redis persistent key-value database
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/redis-server /etc/redis/redis.slave3.conf
+PIDFile=/var/run/redis/redis-slave-server3.pid
+ReadWriteDirectories=-/var/lib/slave3
+Alias=redis.slave3.service
+
+[Install]
+WantedBy=multi-user.target
+
